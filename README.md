@@ -13,6 +13,7 @@ Overview
   * Perform Payment
   * Validate Payment
 4. Response Codes
+5. Sample Code
 
 Introduction
 ------------
@@ -82,4 +83,7 @@ These response codes mentioned below are handled by the SDK itself.
 * 500 : Your request cannot be processed at the moment
 * 401 : Application request cannot be processed at the moment
 
+Sample Code
+-----------
 
+[ Click here for Sample Code ](https://github.com/imepay/imepaySDK_android/blob/master/SampleActivity.java)
