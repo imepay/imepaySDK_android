@@ -8,10 +8,10 @@ Overview
 1. Introduction
 2. SDK Feature
 3. SDK Initialization
-  a. Authenticate Merchant
-  b. Get Transaction Token
-  c. Perform Payment
-  d. Validate Payment
+  * Authenticate Merchant
+  * Get Transaction Token
+  * Perform Payment
+  * Validate Payment
 4. Response Codes
 
 Introduction
@@ -21,8 +21,7 @@ The IME Pay Payment SDK for Android gives access to merchants to receive payment
 
 SDK Features
 ------------
-IME pay payment SDK receives one-time payment from a customer's wallet account.It Accept a Single Payment ,verifies it, process the order and forwards the payment proof.
-
+IME pay Android Merchant Payment SDK enables merchants to receive payments from IME pay customes through their native application. The application performs the payment and verifies the transaction status.
 
 SDK Initialization 
 ------------------
@@ -69,18 +68,18 @@ Validate Payment
 ----------------
 After performing payment the SDK will verify the payment. This feature is handled by the SDK itself. On the basis of the validate payment response the developer will get a response in IMEPaymentCallback(). There are two types of responses that a developer can get in IMEPaymentCallback 
 
-Response Code 100 : 
-Payment was successfully executed and verified.
+* Response Code 100 : 
+- Payment was successfully executed and verified.
 
-Response Code 101 : 
-Payment was successfully executed and but could not get verified. The customer executing the payment will get an SMS for the confirmation.
+* Response Code 101 : 
+- Payment was successfully executed and but could not get verified. The customer executing the payment will get an SMS for the confirmation.
 
 Response Codes
 --------------
 These response codes mentioned below are handled by the SDK itself.
 
-403 : Application unauthorized to use the service.
-500 : Your request cannot be processed at the moment
-401 : Application request cannot be processed at the moment
+* 403 : Application unauthorized to use the service.
+* 500 : Your request cannot be processed at the moment
+* 401 : Application request cannot be processed at the moment
 
 
