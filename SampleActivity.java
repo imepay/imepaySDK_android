@@ -1,4 +1,4 @@
-package com.swifttechnology.easylicense;
+package com.swifttechnology.imepaysample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
