@@ -59,8 +59,8 @@ imePayment.performPayment(“MERCHANT_CODE”,
                           new IMEPaymentCallback() {
            @Override
            public void onSuccess(int ResponseCode) {
-              // 100 : Payment successfully done.
-              // 101 : Payment request sent but failed to confirm. Please check you SMS for confirmation. 
+              // 100 : Transaction successful.
+              // 101 : Transaction failed. 
            }
 });
 ```
@@ -70,10 +70,10 @@ Validate Payment
 After performing payment the SDK will verify the payment. This feature is handled by the SDK itself. On the basis of the validate payment response the developer will get a response in IMEPaymentCallback(). There are two types of responses that a developer can get in IMEPaymentCallback 
 
 * Response Code 100 : 
-- Payment was successfully executed and verified.
+  Payment was successfully executed and verified.
 
 * Response Code 101 : 
-- Payment was successfully executed and but could not get verified. The customer executing the payment will get an SMS for the confirmation.
+  Payment was successfully executed and but could not get verified. The customer executing the payment will get an SMS for the confirmation.
 
 Response Codes
 --------------
