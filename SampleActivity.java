@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.swifttechnology.imepaysdk.IMEPayment;
 import com.swifttechnology.imepaysdk.IMEPaymentCallback;
-import com.swifttechnology.imepaysdk.PLATFORM;
+import com.swifttechnology.imepaysdk.ENVIRONMENT;
 
 public class SampleActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,7 +33,7 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                 String reference_value = "Reference Value";
                 String amount = "2000.00";
 
-                IMEPayment imePayment = new IMEPayment(this, PLATFORM.TEST);
+                IMEPayment imePayment = new IMEPayment(this, ENVIRONMENT.TEST);
 
                 imePayment.performPayment(merchantCode,
                         merchantName,
