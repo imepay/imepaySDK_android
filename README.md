@@ -30,10 +30,10 @@ SDK Initialization
 2. In your activity create an instance for IMEPayment.
 
 ```java
-IMEPayment imePayment = new IMEPayment(activity.this, PLATFORM.LIVE);
+IMEPayment imePayment = new IMEPayment(activity.this, ENVIRONMENT.LIVE);
 ```
 
-Note : Use PLATFORM.TEST for test purposes.
+Note : Use ENVIRONMENT.TEST for test purposes.
 
 Authenticate Merchant / Get Transaction Token
 ---------------------------------------------
@@ -46,7 +46,7 @@ Perform Payment
 This SDK enables merchants to receive payments through IME pay, using the instance of IMEPayment call the method performpayment().
 
 ```java
-IMEPayment imePayment = new IMEPayment(activity.this, PLATFORM.LIVE);
+IMEPayment imePayment = new IMEPayment(activity.this, ENVIRONMENT.LIVE);
 
 imePayment.performPayment(“MERCHANT_CODE”, 
                           “MERCHANT_NAME", 
