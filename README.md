@@ -58,9 +58,13 @@ imePayment.performPayment(“MERCHANT_CODE”,
                           "PASSWORD",
                           new IMEPaymentCallback() {
            @Override
-           public void onSuccess(int ResponseCode) {
-              // 100 : Transaction successful.
-              // 101 : Transaction failed. 
+           public void onSuccess(int responseCode, String transactionId, String msisdn, String amount, String refId) {
+              // Response Code 100 : Transaction successful.
+              // Response Code 101 : Transaction failed. 
+              // transactionId : Unique ID generated from IME pay system
+              // msisdn : Customer Mobile Number
+              // amount : Amount paid by customer
+              // refId : Reference Value
            }
 });
 ```

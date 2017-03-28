@@ -46,7 +46,7 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                         new IMEPaymentCallback() {
 
                             @Override
-                            public void onSuccess(int i) {
+                            public void onSuccess(int responseCode,String transactionId, String msisdn, String amount, String refId) {
                                 //Handle Response Code
                             }
                         });
