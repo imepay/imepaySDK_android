@@ -50,6 +50,7 @@ IMEPayment imePayment = new IMEPayment(activity.this, ENVIRONMENT.LIVE);
 
 imePayment.performPayment(“MERCHANT_CODE”, 
                           “MERCHANT_NAME", 
+                          "MERCAHNT_TRANSACTION_RECORDING_URL",
                           "AMOUNT",
                           "CUSTOMER_MOBILENUMBER",
                           "REFERENCE_ID", 
@@ -58,9 +59,10 @@ imePayment.performPayment(“MERCHANT_CODE”,
                           "PASSWORD",
                           new IMEPaymentCallback() {
            @Override
-           public void onSuccess(int responseCode, String transactionId, String msisdn, String amount, String refId) {
+           public void onSuccess(int responseCode, String responseDescription, String transactionId, String msisdn, String    amount, String refId) {
               // Response Code 100 : Transaction successful.
               // Response Code 101 : Transaction failed. 
+              // responseDescription : Message sent from server, contains transaction success message/ failure message with reason
               // transactionId : Unique ID generated from IME pay system
               // msisdn : Customer Mobile Number
               // amount : Amount paid by customer
