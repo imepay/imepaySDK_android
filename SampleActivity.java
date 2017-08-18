@@ -32,11 +32,13 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                 String customer_mobile = "9849999999";
                 String reference_value = "Reference Value";
                 String amount = "2000.00";
+                String merchant_transaction_recording_url = "https://merchantname.com/merchant_transaction_recording_method"
 
                 IMEPayment imePayment = new IMEPayment(this, ENVIRONMENT.TEST);
 
                 imePayment.performPayment(merchantCode,
                         merchantName,
+                        merchant_transaction_recording_url,
                         amount,
                         customer_mobile,
                         reference_value,
@@ -46,7 +48,7 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                         new IMEPaymentCallback() {
 
                             @Override
-                            public void onSuccess(int responseCode,String transactionId, String msisdn, String amount, String refId) {
+                            public void onSuccess(int responseCode,String responseDescription, String transactionId, String msisdn, String amount, String refId) {
                                 //Handle Response Code
                             }
                         });
