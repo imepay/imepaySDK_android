@@ -81,12 +81,9 @@ After performing payment the SDK will verify the payment. This feature is handle
 * Response Code 101 : 
   Transaction request was successfully sent, but could not get verified. The customer executing the payment will get an SMS for the confirmation.
 
-IMPORTANT NOTE
---------------
-Merchant Transaction Recording URL
-----------------------------------
-Merchants accepting payments directly from mobile application should be a special merchant and thus, must create a transaction recording api and use the URL as a parameter while calling the method perform payment.
-
+IMPORTANT NOTE : Merchant Transaction Recording URL
+---------------------------------------------------
+Merchants accepting payments directly from mobile application should be a special merchant and thus, must create a transaction recording api and use the URL as a parameter while calling the method perform payment. Please get the request and response parameter details from IMEPAY Merchant Team.
 
 Response Codes
 --------------
