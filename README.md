@@ -14,6 +14,7 @@ Overview
   * Validate Payment
 4. Response Codes
 5. Sample Code
+6. Releases
 
 Introduction
 ------------
@@ -97,3 +98,14 @@ Sample Code
 -----------
 
 [ Click here for Sample Code ](https://github.com/imepay/imepaySDK_android/blob/master/SampleActivity.java)
+
+Releases
+-----------
+
+1. v1.1
+2. v1.2
+3. v1.3
+* Fixed issue related to payment in live portal
+4. v2.0
+5. v2.1
+* Fixed issue with text color inside PIN edittext
