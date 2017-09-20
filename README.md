@@ -106,3 +106,6 @@ Releases
 2. v1.2
 3. v1.3
 * Fixed issue related to payment in live portal
+4. v2.0
+5. v2.1
+* Fixed issue with text color inside PIN edittext
