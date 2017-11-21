@@ -29,7 +29,6 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                 String module = "TEST";
                 String username = "TEST";
                 String password = "TEST";
-                String customer_mobile = "9849999999";
                 String reference_value = "Reference Value";
                 String amount = "2000.00";
                 String merchant_transaction_recording_url = "https://merchantname.com/merchant_transaction_recording_method"
@@ -40,7 +39,6 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
                         merchantName,
                         merchant_transaction_recording_url,
                         amount,
-                        customer_mobile,
                         reference_value,
                         module,
                         username,
