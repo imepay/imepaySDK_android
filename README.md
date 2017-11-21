@@ -53,7 +53,6 @@ imePayment.performPayment(“MERCHANT_CODE”,
                           “MERCHANT_NAME", 
                           "MERCAHNT_TRANSACTION_RECORDING_URL",
                           "AMOUNT",
-                          "CUSTOMER_MOBILENUMBER",
                           "REFERENCE_ID", 
                           "MODULE",
                           "USERNAME",
@@ -109,3 +108,6 @@ Releases
 4. v2.0
 5. v2.1
 * Fixed issue with text color inside PIN edittext
+6. v3.0
+* New Flow implemented with 2 factor user validation
+* Customer mobile number is prompted in the SDK itself
