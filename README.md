@@ -98,6 +98,13 @@ Sample Code
 
 [ Click here for Sample Code ](https://github.com/imepay/imepaySDK_android/blob/master/SampleActivity.java)
 
+Assets
+------
+
+[ Click here for IMEPAY Logo(red) ](https://github.com/imepay/imepaySDK_android/blob/master/Assets/IME-Pay-Logo_red.jpeg)
+
+[ Click here for IMEPAY Logo(white) ](https://github.com/imepay/imepaySDK_android/blob/master/Assets/IME-Pay-Logo_white.jpeg)
+
 Releases
 -----------
 
