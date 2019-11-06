@@ -27,7 +27,10 @@ IME pay Android Merchant Payment SDK enables merchants to receive payments from 
 
 SDK Initialization 
 ------------------
-1. Add ime-pay-sdk-vx.x.aar file dependency to your project. 
+1. In your project, open your_app > Gradle Scripts > build.gradle (Module: app) and add the following implementation statement  to the dependencies{} section to depend on the latest version of the IMEPay Merchant SDK: 
+```java
+implementation 'com.swifttechnology.imepaysdk:payment-service:3.0.1'
+```
 2. In your activity create an instance for IMEPayment.
 
 ```java
@@ -115,6 +118,6 @@ Releases
 4. v2.0
 5. v2.1
 * Fixed issue with text color inside PIN edittext
-6. v3.0
+6. v3.0.1
 * New Flow implemented with 2 factor user validation
 * Customer mobile number is prompted in the SDK itself
