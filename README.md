@@ -108,9 +108,9 @@ Sample Code
 Assets
 ------
 
-[ Click here for IMEPAY Logo(red) ](https://github.com/imepay/imepaySDK_android/blob/master/Assets/IME-Pay-Logo_red.jpeg)
+[ Click here for IMEPAY Logo](https://raw.githubusercontent.com/imepay/imepaySDK_android/master/imepaylogo.svg)
 
-[ Click here for IMEPAY Logo(white) ](https://github.com/imepay/imepaySDK_android/blob/master/Assets/IME-Pay-Logo_white.jpeg)
+
 
 Releases
 -----------
