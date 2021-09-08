@@ -29,7 +29,7 @@ SDK Initialization
 ------------------
 1. In your project, open your_app > Gradle Scripts > build.gradle (Module: app) and add the following implementation statement  to the dependencies{} section to depend on the latest version of the IMEPay Merchant SDK: 
 ```java
-implementation 'com.swifttechnology.imepaysdk:payment-service:3.0.1'
+implementation 'com.swifttechnology.imepaysdk:payment-service:4.0.1'
 ```
 2. In your activity create an instance for IMEPayment.
 
@@ -47,31 +47,35 @@ The merchant is verified using the merchant code, merchant username, merchant pa
 Perform Payment
 ---------------
 
-This SDK enables merchants to receive payments through IME pay, using the instance of IMEPayment call the method performpayment().
+This SDK enables merchants to receive payments through IME pay, using the instance of IMEPayment call the method performpaymentV1().
 
 ```java
 IMEPayment imePayment = new IMEPayment(activity.this, ENVIRONMENT.LIVE);
-
-imePayment.performPayment(“MERCHANT_CODE”, 
-                          “MERCHANT_NAME", 
-                          "MERCAHNT_TRANSACTION_RECORDING_URL",
-                          "AMOUNT",
-                          "REFERENCE_ID", 
-                          "MODULE",
-                          "USERNAME",
-                          "PASSWORD",
-                          new IMEPaymentCallback() {
-           @Override
-           public void onSuccess(int responseCode, String responseDescription, String transactionId, String msisdn, String    amount, String refId) {
-              // Response Code 100 : Transaction successful.
-              // Response Code 101 : Transaction failed. 
-              // responseDescription : Message sent from server, contains transaction success message/ failure message with reason
-              // transactionId : Unique ID generated from IME pay system
-              // msisdn : Customer Mobile Number
-              // amount : Amount paid by customer
-              // refId : Reference Value
-           }
+imePayment.performPaymentV1(
+       merchantCode.getText().toString(),
+       merchantName.getText().toString(),
+       merchantUrl.getText().toString(), deliveryUrl.getText().toString(),
+       amount.getText().toString(),
+       refId.getText().toString(),
+       module.getText().toString(),
+       user.getText().toString(),
+       password.getText().toString(),
+       new IMEPaymentCallback() {
+@Override
+public void onSuccess(int responseCode, String transactionId, String msisdn,
+String amount, String refId) {
+// Response Code 100 : Transaction successful.
+// Response Code 101 : Transaction failed.
+// transactionId : Unique ID generated from IME pay system
+// amount: Amount paid by customer
+// refId : Reference Value
+}
+//Override
+//public void onTransactionCancelled(String refID){
+// Your code to handle , if transaction cancelled by user //}
 });
+
+
 ```
 
 Validate Payment
